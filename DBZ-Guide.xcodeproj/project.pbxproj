@@ -14,6 +14,22 @@
 		37759C2C2C3C54D700B839F6 /* DBZ_GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37759C2B2C3C54D700B839F6 /* DBZ_GuideTests.swift */; };
 		37759C362C3C54D700B839F6 /* DBZ_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37759C352C3C54D700B839F6 /* DBZ_GuideUITests.swift */; };
 		37759C382C3C54D700B839F6 /* DBZ_GuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37759C372C3C54D700B839F6 /* DBZ_GuideUITestsLaunchTests.swift */; };
+		378B1DFC2C3C57E700F644D7 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1DFB2C3C57E700F644D7 /* HomeTabView.swift */; };
+		378B1E012C3C5D1F00F644D7 /* EndpointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E002C3C5D1F00F644D7 /* EndpointProvider.swift */; };
+		378B1E062C3C5F2D00F644D7 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E052C3C5F2D00F644D7 /* Character.swift */; };
+		378B1E0A2C3C623500F644D7 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E092C3C623500F644D7 /* Planet.swift */; };
+		378B1E0C2C3C62B100F644D7 /* Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E0B2C3C62B100F644D7 /* Transformation.swift */; };
+		378B1E102C3C640600F644D7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E0F2C3C640600F644D7 /* APIService.swift */; };
+		378B1E122C3C658100F644D7 /* GenericPagedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E112C3C658100F644D7 /* GenericPagedResponse.swift */; };
+		378B1E932C3C9BD300F644D7 /* APIInteractor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378B1E902C3C98CD00F644D7 /* APIInteractor.framework */; };
+		378B1E942C3C9BD300F644D7 /* APIInteractor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 378B1E902C3C98CD00F644D7 /* APIInteractor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		378B1E992C3CDBDE00F644D7 /* DBZEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E982C3CDBDE00F644D7 /* DBZEndpoint.swift */; };
+		378B1E9D2C3CE25100F644D7 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E9C2C3CE25100F644D7 /* AppError.swift */; };
+		378B1E9F2C3D943C00F644D7 /* APIParameterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E9E2C3D943C00F644D7 /* APIParameterProvider.swift */; };
+		378B1EA12C3D9C0600F644D7 /* CharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1EA02C3D9C0600F644D7 /* CharacterList.swift */; };
+		378B1EA42C3D9CB300F644D7 /* CharacterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1EA32C3D9CB300F644D7 /* CharacterCard.swift */; };
+		378B1EA72C3D9CCF00F644D7 /* CharacterCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1EA62C3D9CCF00F644D7 /* CharacterCardViewModel.swift */; };
+		378B1EAA2C3D9F4000F644D7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 378B1EA92C3D9F4000F644D7 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +47,35 @@
 			remoteGlobalIDString = 37759C152C3C54D600B839F6;
 			remoteInfo = "DBZ-Guide";
 		};
+		378B1E8F2C3C98CD00F644D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 378B1E8A2C3C98CD00F644D7 /* APIInteractor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 378B1E5F2C3C973700F644D7;
+			remoteInfo = APIInteractor;
+		};
+		378B1E912C3C98CD00F644D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 378B1E8A2C3C98CD00F644D7 /* APIInteractor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 378B1E692C3C973700F644D7;
+			remoteInfo = APIInteractorTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		378B1E952C3C9BD400F644D7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				378B1E942C3C9BD300F644D7 /* APIInteractor.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		37759C162C3C54D600B839F6 /* DBZ-Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DBZ-Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +89,20 @@
 		37759C312C3C54D700B839F6 /* DBZ-GuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DBZ-GuideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37759C352C3C54D700B839F6 /* DBZ_GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBZ_GuideUITests.swift; sourceTree = "<group>"; };
 		37759C372C3C54D700B839F6 /* DBZ_GuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBZ_GuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		378B1DFB2C3C57E700F644D7 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		378B1E002C3C5D1F00F644D7 /* EndpointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProvider.swift; sourceTree = "<group>"; };
+		378B1E052C3C5F2D00F644D7 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		378B1E092C3C623500F644D7 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		378B1E0B2C3C62B100F644D7 /* Transformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformation.swift; sourceTree = "<group>"; };
+		378B1E0F2C3C640600F644D7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		378B1E112C3C658100F644D7 /* GenericPagedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPagedResponse.swift; sourceTree = "<group>"; };
+		378B1E8A2C3C98CD00F644D7 /* APIInteractor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APIInteractor.xcodeproj; path = ../APIInteractor/APIInteractor.xcodeproj; sourceTree = "<group>"; };
+		378B1E982C3CDBDE00F644D7 /* DBZEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBZEndpoint.swift; sourceTree = "<group>"; };
+		378B1E9C2C3CE25100F644D7 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		378B1E9E2C3D943C00F644D7 /* APIParameterProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParameterProvider.swift; sourceTree = "<group>"; };
+		378B1EA02C3D9C0600F644D7 /* CharacterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterList.swift; sourceTree = "<group>"; };
+		378B1EA32C3D9CB300F644D7 /* CharacterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCard.swift; sourceTree = "<group>"; };
+		378B1EA62C3D9CCF00F644D7 /* CharacterCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378B1EAA2C3D9F4000F644D7 /* Kingfisher in Frameworks */,
+				378B1E932C3C9BD300F644D7 /* APIInteractor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +139,7 @@
 				37759C2A2C3C54D700B839F6 /* DBZ-GuideTests */,
 				37759C342C3C54D700B839F6 /* DBZ-GuideUITests */,
 				37759C172C3C54D600B839F6 /* Products */,
+				378B1E892C3C98CD00F644D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +156,11 @@
 		37759C182C3C54D600B839F6 /* DBZ-Guide */ = {
 			isa = PBXGroup;
 			children = (
+				378B1E9A2C3CE22E00F644D7 /* Types */,
+				378B1E042C3C5F1900F644D7 /* Models */,
+				378B1DFD2C3C5C8300F644D7 /* API */,
+				378B1DF82C3C57BA00F644D7 /* Pages */,
+				378B1EA22C3D9C8000F644D7 /* Views */,
 				37759C192C3C54D600B839F6 /* DBZ_GuideApp.swift */,
 				37759C1B2C3C54D600B839F6 /* ContentView.swift */,
 				37759C1D2C3C54D700B839F6 /* Assets.xcassets */,
@@ -129,6 +195,79 @@
 			path = "DBZ-GuideUITests";
 			sourceTree = "<group>";
 		};
+		378B1DF82C3C57BA00F644D7 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				378B1DFB2C3C57E700F644D7 /* HomeTabView.swift */,
+				378B1EA02C3D9C0600F644D7 /* CharacterList.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		378B1DFD2C3C5C8300F644D7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				378B1E002C3C5D1F00F644D7 /* EndpointProvider.swift */,
+				378B1E0F2C3C640600F644D7 /* APIService.swift */,
+				378B1E982C3CDBDE00F644D7 /* DBZEndpoint.swift */,
+				378B1E9E2C3D943C00F644D7 /* APIParameterProvider.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		378B1E042C3C5F1900F644D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				378B1E112C3C658100F644D7 /* GenericPagedResponse.swift */,
+				378B1E052C3C5F2D00F644D7 /* Character.swift */,
+				378B1E092C3C623500F644D7 /* Planet.swift */,
+				378B1E0B2C3C62B100F644D7 /* Transformation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		378B1E892C3C98CD00F644D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				378B1E8A2C3C98CD00F644D7 /* APIInteractor.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		378B1E8B2C3C98CD00F644D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				378B1E902C3C98CD00F644D7 /* APIInteractor.framework */,
+				378B1E922C3C98CD00F644D7 /* APIInteractorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		378B1E9A2C3CE22E00F644D7 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				378B1E9C2C3CE25100F644D7 /* AppError.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		378B1EA22C3D9C8000F644D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				378B1EA52C3D9CB800F644D7 /* Character */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		378B1EA52C3D9CB800F644D7 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				378B1EA32C3D9CB300F644D7 /* CharacterCard.swift */,
+				378B1EA62C3D9CCF00F644D7 /* CharacterCardViewModel.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,12 +278,16 @@
 				37759C122C3C54D600B839F6 /* Sources */,
 				37759C132C3C54D600B839F6 /* Frameworks */,
 				37759C142C3C54D600B839F6 /* Resources */,
+				378B1E952C3C9BD400F644D7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "DBZ-Guide";
+			packageProductDependencies = (
+				378B1EA92C3D9F4000F644D7 /* Kingfisher */,
+			);
 			productName = "DBZ-Guide";
 			productReference = 37759C162C3C54D600B839F6 /* DBZ-Guide.app */;
 			productType = "com.apple.product-type.application";
@@ -217,8 +360,17 @@
 				Base,
 			);
 			mainGroup = 37759C0D2C3C54D600B839F6;
+			packageReferences = (
+				378B1EA82C3D9F4000F644D7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 37759C172C3C54D600B839F6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 378B1E8B2C3C98CD00F644D7 /* Products */;
+					ProjectRef = 378B1E8A2C3C98CD00F644D7 /* APIInteractor.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				37759C152C3C54D600B839F6 /* DBZ-Guide */,
@@ -227,6 +379,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		378B1E902C3C98CD00F644D7 /* APIInteractor.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = APIInteractor.framework;
+			remoteRef = 378B1E8F2C3C98CD00F644D7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		378B1E922C3C98CD00F644D7 /* APIInteractorTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = APIInteractorTests.xctest;
+			remoteRef = 378B1E912C3C98CD00F644D7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		37759C142C3C54D600B839F6 /* Resources */ = {
@@ -259,8 +428,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378B1E992C3CDBDE00F644D7 /* DBZEndpoint.swift in Sources */,
+				378B1EA12C3D9C0600F644D7 /* CharacterList.swift in Sources */,
+				378B1DFC2C3C57E700F644D7 /* HomeTabView.swift in Sources */,
 				37759C1C2C3C54D600B839F6 /* ContentView.swift in Sources */,
+				378B1E9F2C3D943C00F644D7 /* APIParameterProvider.swift in Sources */,
+				378B1E062C3C5F2D00F644D7 /* Character.swift in Sources */,
+				378B1E0A2C3C623500F644D7 /* Planet.swift in Sources */,
+				378B1EA42C3D9CB300F644D7 /* CharacterCard.swift in Sources */,
+				378B1EA72C3D9CCF00F644D7 /* CharacterCardViewModel.swift in Sources */,
+				378B1E122C3C658100F644D7 /* GenericPagedResponse.swift in Sources */,
+				378B1E102C3C640600F644D7 /* APIService.swift in Sources */,
 				37759C1A2C3C54D600B839F6 /* DBZ_GuideApp.swift in Sources */,
+				378B1E012C3C5D1F00F644D7 /* EndpointProvider.swift in Sources */,
+				378B1E0C2C3C62B100F644D7 /* Transformation.swift in Sources */,
+				378B1E9D2C3CE25100F644D7 /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +626,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -483,7 +665,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -619,6 +801,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		378B1EA82C3D9F4000F644D7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = revision;
+				revision = b132babaf92ae4e4352e4918770427b345887e82;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		378B1EA92C3D9F4000F644D7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 378B1EA82C3D9F4000F644D7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37759C0E2C3C54D600B839F6 /* Project object */;
 }
