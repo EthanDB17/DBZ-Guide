@@ -27,20 +27,24 @@ struct CharacterCard: View {
             
             Text(character.name)
             
-            HStack {
-                Text("Base Ki: \(character.ki)")
-                Spacer()
-                Text("Max Ki: \(character.maxKi)")
-            }
-            .frame(maxWidth: .infinity)
-            
-            HStack {
-                Text("Race: \(character.race)")
-                Text("Affiliation: \(character.affilitation)")
+            Grid(alignment: .leading, horizontalSpacing: 16, verticalSpacing: 8) {
+                GridRow {
+                    Text("Base Ki: \(character.ki)")
+                    Text("Max Ki: \(character.maxKi)")
+                }
+                GridRow {
+                    Text("Race: \(character.race)")
+                    Text("Affiliation: \(character.affilitation)")
+                }
             }
             .frame(maxWidth: .infinity)
         }
         .frame(maxWidth: .infinity)
+        .padding(.vertical, 8)
+        .background(Theme.Colors.primaryCardBackground)
+        .cornerRadius(16)
+        .shadow(radius: 5)
+        .padding(8)
     }
 }
 
