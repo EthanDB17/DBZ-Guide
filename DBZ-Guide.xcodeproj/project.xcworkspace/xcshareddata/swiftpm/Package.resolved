@@ -1,6 +1,15 @@
 {
-  "originHash" : "917a2b512148612347b307b5f8d624e74df48af36fa322c80901a86fc0e1317f",
+  "originHash" : "24a0e59f795cf5b65da6414ae686d0be6bc10ced861f8bafb5740bbe156c1f13",
   "pins" : [
+    {
+      "identity" : "apiinteractor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/EthanDB17/APIInteractor",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c99a1d57c18d9fdc0e1ae046d92f48e88d4522f5"
+      }
+    },
     {
       "identity" : "kingfisher",
       "kind" : "remoteSourceControl",

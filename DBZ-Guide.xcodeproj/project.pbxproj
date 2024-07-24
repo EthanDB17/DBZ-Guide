@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		372B70B22C5169DE009A6D0F /* APIInteractor in Resources */ = {isa = PBXBuildFile; fileRef = 372B70B12C5169DE009A6D0F /* APIInteractor */; };
+		376D2CC52C4740A000424544 /* APIInteractor in Frameworks */ = {isa = PBXBuildFile; productRef = 376D2CC42C4740A000424544 /* APIInteractor */; };
+		376D2CCC2C4742E100424544 /* APIInteractor in Frameworks */ = {isa = PBXBuildFile; productRef = 376D2CCB2C4742E100424544 /* APIInteractor */; };
 		37759C1A2C3C54D600B839F6 /* DBZ_GuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37759C192C3C54D600B839F6 /* DBZ_GuideApp.swift */; };
 		37759C1C2C3C54D600B839F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37759C1B2C3C54D600B839F6 /* ContentView.swift */; };
 		37759C1E2C3C54D700B839F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37759C1D2C3C54D700B839F6 /* Assets.xcassets */; };
@@ -21,8 +24,6 @@
 		378B1E0C2C3C62B100F644D7 /* Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E0B2C3C62B100F644D7 /* Transformation.swift */; };
 		378B1E102C3C640600F644D7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E0F2C3C640600F644D7 /* APIService.swift */; };
 		378B1E122C3C658100F644D7 /* GenericPagedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E112C3C658100F644D7 /* GenericPagedResponse.swift */; };
-		378B1E932C3C9BD300F644D7 /* APIInteractor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378B1E902C3C98CD00F644D7 /* APIInteractor.framework */; };
-		378B1E942C3C9BD300F644D7 /* APIInteractor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 378B1E902C3C98CD00F644D7 /* APIInteractor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		378B1E992C3CDBDE00F644D7 /* DBZEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E982C3CDBDE00F644D7 /* DBZEndpoint.swift */; };
 		378B1E9D2C3CE25100F644D7 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E9C2C3CE25100F644D7 /* AppError.swift */; };
 		378B1E9F2C3D943C00F644D7 /* APIParameterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B1E9E2C3D943C00F644D7 /* APIParameterProvider.swift */; };
@@ -47,37 +48,10 @@
 			remoteGlobalIDString = 37759C152C3C54D600B839F6;
 			remoteInfo = "DBZ-Guide";
 		};
-		378B1E8F2C3C98CD00F644D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 378B1E8A2C3C98CD00F644D7 /* APIInteractor.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 378B1E5F2C3C973700F644D7;
-			remoteInfo = APIInteractor;
-		};
-		378B1E912C3C98CD00F644D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 378B1E8A2C3C98CD00F644D7 /* APIInteractor.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 378B1E692C3C973700F644D7;
-			remoteInfo = APIInteractorTests;
-		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		378B1E952C3C9BD400F644D7 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				378B1E942C3C9BD300F644D7 /* APIInteractor.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		372B70B12C5169DE009A6D0F /* APIInteractor */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = APIInteractor; path = ../../../APIInteractor; sourceTree = "<group>"; };
 		37759C162C3C54D600B839F6 /* DBZ-Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DBZ-Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37759C192C3C54D600B839F6 /* DBZ_GuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBZ_GuideApp.swift; sourceTree = "<group>"; };
 		37759C1B2C3C54D600B839F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,7 +70,6 @@
 		378B1E0B2C3C62B100F644D7 /* Transformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformation.swift; sourceTree = "<group>"; };
 		378B1E0F2C3C640600F644D7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		378B1E112C3C658100F644D7 /* GenericPagedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPagedResponse.swift; sourceTree = "<group>"; };
-		378B1E8A2C3C98CD00F644D7 /* APIInteractor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APIInteractor.xcodeproj; path = ../APIInteractor/APIInteractor.xcodeproj; sourceTree = "<group>"; };
 		378B1E982C3CDBDE00F644D7 /* DBZEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBZEndpoint.swift; sourceTree = "<group>"; };
 		378B1E9C2C3CE25100F644D7 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		378B1E9E2C3D943C00F644D7 /* APIParameterProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParameterProvider.swift; sourceTree = "<group>"; };
@@ -110,8 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376D2CC52C4740A000424544 /* APIInteractor in Frameworks */,
+				376D2CCC2C4742E100424544 /* APIInteractor in Frameworks */,
 				378B1EAA2C3D9F4000F644D7 /* Kingfisher in Frameworks */,
-				378B1E932C3C9BD300F644D7 /* APIInteractor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		372B70AE2C5168D6009A6D0F /* Local-Package */ = {
+			isa = PBXGroup;
+			children = (
+				372B70B12C5169DE009A6D0F /* APIInteractor */,
+			);
+			path = "Local-Package";
+			sourceTree = "<group>";
+		};
 		37759C0D2C3C54D600B839F6 = {
 			isa = PBXGroup;
 			children = (
@@ -139,7 +121,6 @@
 				37759C2A2C3C54D700B839F6 /* DBZ-GuideTests */,
 				37759C342C3C54D700B839F6 /* DBZ-GuideUITests */,
 				37759C172C3C54D600B839F6 /* Products */,
-				378B1E892C3C98CD00F644D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +137,7 @@
 		37759C182C3C54D600B839F6 /* DBZ-Guide */ = {
 			isa = PBXGroup;
 			children = (
+				372B70AE2C5168D6009A6D0F /* Local-Package */,
 				378B1E9A2C3CE22E00F644D7 /* Types */,
 				378B1E042C3C5F1900F644D7 /* Models */,
 				378B1DFD2C3C5C8300F644D7 /* API */,
@@ -226,23 +208,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		378B1E892C3C98CD00F644D7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				378B1E8A2C3C98CD00F644D7 /* APIInteractor.xcodeproj */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		378B1E8B2C3C98CD00F644D7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				378B1E902C3C98CD00F644D7 /* APIInteractor.framework */,
-				378B1E922C3C98CD00F644D7 /* APIInteractorTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		378B1E9A2C3CE22E00F644D7 /* Types */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,7 +243,6 @@
 				37759C122C3C54D600B839F6 /* Sources */,
 				37759C132C3C54D600B839F6 /* Frameworks */,
 				37759C142C3C54D600B839F6 /* Resources */,
-				378B1E952C3C9BD400F644D7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,6 +251,8 @@
 			name = "DBZ-Guide";
 			packageProductDependencies = (
 				378B1EA92C3D9F4000F644D7 /* Kingfisher */,
+				376D2CC42C4740A000424544 /* APIInteractor */,
+				376D2CCB2C4742E100424544 /* APIInteractor */,
 			);
 			productName = "DBZ-Guide";
 			productReference = 37759C162C3C54D600B839F6 /* DBZ-Guide.app */;
@@ -362,15 +328,10 @@
 			mainGroup = 37759C0D2C3C54D600B839F6;
 			packageReferences = (
 				378B1EA82C3D9F4000F644D7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				372B70AD2C516819009A6D0F /* XCRemoteSwiftPackageReference "APIInteractor" */,
 			);
 			productRefGroup = 37759C172C3C54D600B839F6 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 378B1E8B2C3C98CD00F644D7 /* Products */;
-					ProjectRef = 378B1E8A2C3C98CD00F644D7 /* APIInteractor.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				37759C152C3C54D600B839F6 /* DBZ-Guide */,
@@ -380,29 +341,13 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		378B1E902C3C98CD00F644D7 /* APIInteractor.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = APIInteractor.framework;
-			remoteRef = 378B1E8F2C3C98CD00F644D7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		378B1E922C3C98CD00F644D7 /* APIInteractorTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = APIInteractorTests.xctest;
-			remoteRef = 378B1E912C3C98CD00F644D7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		37759C142C3C54D600B839F6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				37759C222C3C54D700B839F6 /* Preview Assets.xcassets in Resources */,
+				372B70B22C5169DE009A6D0F /* APIInteractor in Resources */,
 				37759C1E2C3C54D700B839F6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -803,6 +748,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		372B70AD2C516819009A6D0F /* XCRemoteSwiftPackageReference "APIInteractor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EthanDB17/APIInteractor";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		378B1EA82C3D9F4000F644D7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -814,6 +767,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		376D2CC42C4740A000424544 /* APIInteractor */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = APIInteractor;
+		};
+		376D2CCB2C4742E100424544 /* APIInteractor */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = APIInteractor;
+		};
 		378B1EA92C3D9F4000F644D7 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 378B1EA82C3D9F4000F644D7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
