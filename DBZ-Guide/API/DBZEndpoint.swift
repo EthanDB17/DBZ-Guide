@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum DBZEndpoint {
+enum DBZEndpoint: Hashable {
     case characters
     case character(id: Int)
     case planets

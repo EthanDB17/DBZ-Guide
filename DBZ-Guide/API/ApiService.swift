@@ -1,5 +1,5 @@
 //
-//  APIService.swift
+//  ApiService.swift
 //  DBZ-Guide
 //
 //  Created by Ethan Borrowman on 7/8/24.
@@ -8,12 +8,14 @@
 import Foundation
 import APIInteractor
 
-protocol IAPIService {
-    func getCharacters(page: Int) async throws -> [Character]
-    func getCharacter(id: Int) async throws -> Character
+protocol ApiServiceable {
+    func getCharacters(page: Int) async throws(AppError) -> GenericPagedResponse<Character>
+    func getCharacter(id: Int) async throws(AppError) -> Character
+    func getPlanets(page: Int) async throws(AppError) -> GenericPagedResponse<Planet>
+    func getPlanet(id: Int) async throws(AppError) -> Planet
 }
 
-struct APIService {
+struct ApiService: ApiServiceable {
     
     // MARK: - Properties -
     
@@ -31,12 +33,12 @@ struct APIService {
     
     // MARK: - API Calls -
     
-    func getCharacters(page: Int) async throws(AppError) -> [Character] {
+    func getCharacters(page: Int) async throws(AppError) -> GenericPagedResponse<Character> {
         do {
             let endpoint = endpointProvider.provideEndpoint(for: .characters)
             let parameters = parameterProvider.provideParameterDictionary(parameters: [.page(page: page)])
-            let characters: [Character] = try await apiExecutor.executeRequest(endpoint: endpoint, parameters: parameters)
-            return characters
+            let characterData: GenericPagedResponse<Character> = try await apiExecutor.executeRequest(endpoint: endpoint, parameters: parameters)
+            return characterData
         } catch {
             throw AppError(errorType: .apiError(message: error.errorMessage))
         }
@@ -52,12 +54,12 @@ struct APIService {
         }
     }
     
-    func getPlanets(page: Int) async throws(AppError) -> [Planet] {
+    func getPlanets(page: Int) async throws(AppError) -> GenericPagedResponse<Planet> {
         do {
             let endpoint = endpointProvider.provideEndpoint(for: .planets)
             let parameters = parameterProvider.provideParameterDictionary(parameters: [.page(page: page)])
-            let planets: [Planet] = try await apiExecutor.executeRequest(endpoint: endpoint, parameters: parameters)
-            return planets
+            let planetData: GenericPagedResponse<Planet> = try await apiExecutor.executeRequest(endpoint: endpoint, parameters: parameters)
+            return planetData
         } catch {
             throw AppError(errorType: .apiError(message: error.errorMessage))
         }

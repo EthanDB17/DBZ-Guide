@@ -11,7 +11,7 @@ import SwiftUI
 struct DBZ_GuideApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CharacterList(viewModel: CharacterListViewModel())
         }
     }
 }

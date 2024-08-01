@@ -12,8 +12,10 @@ class CharacterCardViewModel {
     // MARK: - Properties -
     
     let character: Character
+    let displayIndex: Int
     
-    init(character: Character) {
+    init(character: Character, displayIndex: Int) {
         self.character = character
+        self.displayIndex = displayIndex
     }
 }

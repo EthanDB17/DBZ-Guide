@@ -11,7 +11,7 @@ import APIInteractor
 // MARK: - Endpoint Type -
 
 struct Endpoint: APIEndpoint {
-    private let baseUrl = "https://www.dragonball-api.com/api"
+    private let baseUrl = "https://dragonball-api.com/api/"
     
     let url: String
     let httpMethod: HttpMethodType

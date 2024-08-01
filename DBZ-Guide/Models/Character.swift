@@ -15,7 +15,7 @@ struct Character: Codable {
     let race: String
     let description: String
     let image: String
-    let affilitation: String
+    let affiliation: String
     let originPlanet: Planet?
     let transformations: [Transformation]?
 }
