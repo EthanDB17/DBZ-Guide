@@ -34,7 +34,7 @@ final class CharacterListViewModel: @unchecked Sendable {
     
     @MainActor private(set) var characters: [Character] = []
     @ObservationIgnored var interactor: CharacterInteractable
-    var characterTask: Task<(), Never>?
+    @ObservationIgnored var characterTask: Task<(), Never>?
     var state: State = .loadingFirstPage
     
     @MainActor
@@ -69,7 +69,7 @@ final class CharacterListViewModel: @unchecked Sendable {
             return
         }
         
-        if state == .loadingNextPage || characterTask?.isCancelled == false {
+        if state == .loadingNextPage {
             return
         }
         

@@ -13,7 +13,7 @@ struct CharacterList: View {
     
     var body: some View {
         switch viewModel.state {
-        case .loaded: characterGrid()
+        case .loaded, .loadingNextPage: characterGrid()
         default: Text("Not Implemented")
         }
     }
@@ -27,6 +27,13 @@ struct CharacterList: View {
             LazyVGrid(columns: columns) {
                 ForEach(Array(viewModel.characters.enumerated()), id: \.element.id) { index, character in
                     CharacterCard(viewModel: CharacterCardViewModel(character: character, displayIndex: index))
+                        .onAppear {
+                            viewModel.checkIfNextPageIsNeeded(displayIndex: index)
+                        }
+                }
+                
+                if viewModel.state == .loadingNextPage {
+                    ProgressView()
                 }
             }
         }
